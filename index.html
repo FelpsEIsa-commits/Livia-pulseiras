@@ -1,0 +1,340 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulseiras da Lili</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster+Two:wght@700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+  <div class="scroll-progress" aria-hidden="true">
+    <span id="scroll-progress-bar"></span>
+  </div>
+  <div class="theme-transition-layer" aria-hidden="true"></div>
+  <div class="bg-glow glow-a" aria-hidden="true"></div>
+  <div class="bg-glow glow-b" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo-lockup" href="#inicio" aria-label="Pulseiras da Lili">
+      <span class="logo-bubble">L</span>
+      <span class="logo-text">
+        <strong>Lili</strong>
+        <small>Pulseiras</small>
+      </span>
+      <span class="spark spark-a" aria-hidden="true">+</span>
+      <span class="spark spark-b" aria-hidden="true">+</span>
+    </a>
+    <nav class="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#colecao">Colecao</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Modo Noturno</button>
+    <div class="header-socials">
+      <a class="header-cta cta-wa" href="https://wa.me/5535988034753?text=Oi%20Lili!%20Quero%20fazer%20um%20pedido.">
+        <svg class="icon icon-wa" viewBox="0 0 16 16" aria-hidden="true">
+          <path d="M13.601 2.326A7.854 7.854 0 0 0 8.008 0C3.58 0 0 3.58 0 8.008c0 1.41.37 2.787 1.07 4.011L0 16l4.103-1.06a7.94 7.94 0 0 0 3.903 1.005h.003c4.428 0 8.008-3.58 8.008-8.008a7.94 7.94 0 0 0-2.416-5.611zM8.008 14.637a6.57 6.57 0 0 1-3.35-.92l-.24-.144-2.434.63.649-2.372-.157-.243a6.54 6.54 0 0 1-1.003-3.48c0-3.625 2.95-6.575 6.575-6.575a6.53 6.53 0 0 1 4.648 1.934 6.53 6.53 0 0 1 1.928 4.646c-.003 3.626-2.953 6.576-6.576 6.576zm3.61-4.87c-.197-.099-1.17-.578-1.352-.644-.182-.066-.315-.099-.448.1-.132.197-.513.644-.63.776-.116.132-.231.148-.428.05-.197-.1-.833-.307-1.586-.98-.586-.523-.98-1.17-1.096-1.367-.116-.197-.012-.304.087-.402.09-.09.197-.231.296-.347.099-.116.132-.198.198-.33.066-.132.033-.248-.017-.347-.05-.099-.448-1.08-.614-1.478-.162-.39-.327-.337-.448-.343-.116-.007-.248-.008-.38-.008a.73.73 0 0 0-.53.248c-.182.198-.694.677-.694 1.65 0 .973.71 1.914.809 2.047.099.132 1.393 2.128 3.374 2.982.472.204.84.326 1.126.417.473.15.904.129 1.245.078.38-.057 1.17-.479 1.336-.941.165-.462.165-.858.116-.94-.05-.083-.182-.132-.38-.231z" />
+        </svg>
+        <span>WhatsApp</span>
+      </a>
+      <a class="header-cta cta-ig" href="https://instagram.com/_pulseiras_da_lili_" target="_blank" rel="noopener noreferrer">
+        <svg class="icon icon-ig" viewBox="0 0 16 16" aria-hidden="true">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a5.5 5.5 0 0 0-1.99 1.302A5.5 5.5 0 0 0 .42 3.71c-.2.509-.333 1.09-.372 1.943C.01 6.506 0 6.779 0 8.95s.01 2.444.048 3.297c.04.854.173 1.435.372 1.943.2.509.467.94.76 1.233.294.294.725.56 1.234.76.508.2 1.09.333 1.943.372C5.556 15.99 5.829 16 8 16s2.444-.01 3.297-.048c.854-.04 1.435-.173 1.943-.372a5.5 5.5 0 0 0 1.233-.76 5.5 5.5 0 0 0 .76-1.233c.2-.508.333-1.09.372-1.943.038-.853.048-1.126.048-3.297s-.01-2.444-.048-3.297c-.04-.854-.173-1.435-.372-1.943a5.5 5.5 0 0 0-.76-1.233A5.5 5.5 0 0 0 13.24.42c-.508-.2-1.09-.333-1.943-.372C10.444.01 10.171 0 8 0zm0 1.441c2.134 0 2.389.008 3.233.046.78.036 1.204.166 1.486.276.375.146.643.321.925.603.282.282.457.55.603.925.11.282.24.707.276 1.486.038.844.046 1.099.046 3.233s-.008 2.389-.046 3.233c-.036.78-.166 1.204-.276 1.486a4.1 4.1 0 0 1-.603.925 4.1 4.1 0 0 1-.925.603c-.282.11-.707.24-1.486.276-.844.038-1.099.046-3.233.046s-2.389-.008-3.233-.046c-.78-.036-1.204-.166-1.486-.276a4.1 4.1 0 0 1-.925-.603 4.1 4.1 0 0 1-.603-.925c-.11-.282-.24-.707-.276-1.486C1.45 10.39 1.44 10.134 1.44 8s.01-2.389.048-3.233c.036-.78.166-1.204.276-1.486.146-.375.321-.643.603-.925a4.1 4.1 0 0 1 .925-.603c.282-.11.707-.24 1.486-.276C5.611 1.45 5.866 1.44 8 1.44z"/>
+          <path d="M8 3.892A4.108 4.108 0 1 0 8 12.108 4.108 4.108 0 0 0 8 3.892zm0 6.773a2.665 2.665 0 1 1 0-5.33 2.665 2.665 0 0 1 0 5.33zm4.271-6.938a.96.96 0 1 1-1.92 0 .96.96 0 0 1 1.92 0z"/>
+        </svg>
+        <span>Instagram</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero reveal" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">atelier autoral</p>
+        <h1>Pulseiras da Lili</h1>
+        <div class="hero-cute" aria-hidden="true">
+          <span>&#9825;</span>
+          <span>&#10022;</span>
+          <span>&#9825;</span>
+        </div>
+        <p class="switch-line">
+          estilo
+          <span id="switch-word">delicado</span>
+        </p>
+        <p class="intro-placeholder">
+          Meu nome e Livia, tenho 10 anos e faco pulseiras, aneis, colares e tornozeleiras artesanais.
+          Personalizo com iniciais, qualquer cor e enviamos para qualquer lugar do estado e do Brasil.
+        </p>
+        <div class="hero-facts">
+          <span>Livia, 10 anos</span>
+          <span>feito a mao</span>
+          <span>entrega no estado e no Brasil</span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-main" href="#colecao">Explorar</a>
+          <a class="btn btn-soft btn-whatsapp" href="https://wa.me/5535988034753?text=Oi%20Lili!%20Quero%20fazer%20um%20pedido.">
+            <svg class="icon icon-wa" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M13.601 2.326A7.854 7.854 0 0 0 8.008 0C3.58 0 0 3.58 0 8.008c0 1.41.37 2.787 1.07 4.011L0 16l4.103-1.06a7.94 7.94 0 0 0 3.903 1.005h.003c4.428 0 8.008-3.58 8.008-8.008a7.94 7.94 0 0 0-2.416-5.611zM8.008 14.637a6.57 6.57 0 0 1-3.35-.92l-.24-.144-2.434.63.649-2.372-.157-.243a6.54 6.54 0 0 1-1.003-3.48c0-3.625 2.95-6.575 6.575-6.575a6.53 6.53 0 0 1 4.648 1.934 6.53 6.53 0 0 1 1.928 4.646c-.003 3.626-2.953 6.576-6.576 6.576zm3.61-4.87c-.197-.099-1.17-.578-1.352-.644-.182-.066-.315-.099-.448.1-.132.197-.513.644-.63.776-.116.132-.231.148-.428.05-.197-.1-.833-.307-1.586-.98-.586-.523-.98-1.17-1.096-1.367-.116-.197-.012-.304.087-.402.09-.09.197-.231.296-.347.099-.116.132-.198.198-.33.066-.132.033-.248-.017-.347-.05-.099-.448-1.08-.614-1.478-.162-.39-.327-.337-.448-.343-.116-.007-.248-.008-.38-.008a.73.73 0 0 0-.53.248c-.182.198-.694.677-.694 1.65 0 .973.71 1.914.809 2.047.099.132 1.393 2.128 3.374 2.982.472.204.84.326 1.126.417.473.15.904.129 1.245.078.38-.057 1.17-.479 1.336-.941.165-.462.165-.858.116-.94-.05-.083-.182-.132-.38-.231z" />
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+          <a class="btn btn-soft btn-instagram" href="https://instagram.com/_pulseiras_da_lili_" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-ig" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a5.5 5.5 0 0 0-1.99 1.302A5.5 5.5 0 0 0 .42 3.71c-.2.509-.333 1.09-.372 1.943C.01 6.506 0 6.779 0 8.95s.01 2.444.048 3.297c.04.854.173 1.435.372 1.943.2.509.467.94.76 1.233.294.294.725.56 1.234.76.508.2 1.09.333 1.943.372C5.556 15.99 5.829 16 8 16s2.444-.01 3.297-.048c.854-.04 1.435-.173 1.943-.372a5.5 5.5 0 0 0 1.233-.76 5.5 5.5 0 0 0 .76-1.233c.2-.508.333-1.09.372-1.943.038-.853.048-1.126.048-3.297s-.01-2.444-.048-3.297c-.04-.854-.173-1.435-.372-1.943a5.5 5.5 0 0 0-.76-1.233A5.5 5.5 0 0 0 13.24.42c-.508-.2-1.09-.333-1.943-.372C10.444.01 10.171 0 8 0zm0 1.441c2.134 0 2.389.008 3.233.046.78.036 1.204.166 1.486.276.375.146.643.321.925.603.282.282.457.55.603.925.11.282.24.707.276 1.486.038.844.046 1.099.046 3.233s-.008 2.389-.046 3.233c-.036.78-.166 1.204-.276 1.486a4.1 4.1 0 0 1-.603.925 4.1 4.1 0 0 1-.925.603c-.282.11-.707.24-1.486.276-.844.038-1.099.046-3.233.046s-2.389-.008-3.233-.046c-.78-.036-1.204-.166-1.486-.276a4.1 4.1 0 0 1-.925-.603 4.1 4.1 0 0 1-.603-.925c-.11-.282-.24-.707-.276-1.486C1.45 10.39 1.44 10.134 1.44 8s.01-2.389.048-3.233c.036-.78.166-1.204.276-1.486.146-.375.321-.643.603-.925a4.1 4.1 0 0 1 .925-.603c.282-.11.707-.24 1.486-.276C5.611 1.45 5.866 1.44 8 1.44z"/>
+              <path d="M8 3.892A4.108 4.108 0 1 0 8 12.108 4.108 4.108 0 0 0 8 3.892zm0 6.773a2.665 2.665 0 1 1 0-5.33 2.665 2.665 0 0 1 0 5.33zm4.271-6.938a.96.96 0 1 1-1.92 0 .96.96 0 0 1 1.92 0z"/>
+            </svg>
+            <span>Instagram</span>
+          </a>
+        </div>
+
+        <div class="mini-tags">
+          <span>feito a mao</span>
+          <span>iniciais</span>
+          <span>qualquer cor</span>
+          <span>preto #1</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit">
+          <div class="ring ring-a"></div>
+          <div class="ring ring-b"></div>
+          <div class="ring ring-c"></div>
+          <div class="photo-cluster">
+            <div
+              class="visual-card card-main"
+              data-images="images/hero-mao-rosa.jpeg|images/pulseira-rosa-limao-rosa.jpeg|images/pulseira-rosa-limao-amarelo.jpeg|images/pulseira-rosa.jpeg|images/hero-kit-rosa.jpeg|images/pulseira-turquesa-trio.jpeg|images/pulseira-rosa-turquesa.jpeg"
+            ></div>
+            <div
+              class="visual-card card-left"
+              data-images="images/hero-kit-rosa.jpeg|images/pulseira-preta-coracao-rosa.jpeg|images/lookbook-rosa-coracao.jpeg|images/pulseira-cristal-rosa.jpeg|images/pulseira-branca-limao-verde.jpeg|images/pulseira-preta-dourada.jpeg|images/colar-mianga-rosa-verde.jpeg"
+            ></div>
+            <div
+              class="visual-card card-right"
+              data-images="images/pulseira-rosa.jpeg|images/pulseira-branca-limao-verde.jpeg|images/lookbook-a.jpeg|images/pulseira-perola-limao.jpeg|images/pulseira-preta-coracao-rosa.jpeg|images/pulseira-turquesa-miuda.jpeg|images/pulseira-rosa-turquesa.jpeg|images/pulseira-preta-dourada.jpeg"
+            ></div>
+          </div>
+          <div class="charm charm-a"></div>
+          <div class="charm charm-b"></div>
+          <div class="charm charm-c"></div>
+          <div class="shine shine-a"></div>
+          <div class="shine shine-b"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story reveal" id="sobre">
+      <article class="story-card story-main">
+        <p class="story-kicker">Apresentacao</p>
+        <h2>Oi, eu sou a Livia</h2>
+        <p>
+          Tenho 10 anos e crio pulseiras artesanais com muito carinho.
+          Cada pedido e montado no seu estilo para ficar unico.
+        </p>
+      </article>
+
+      <article class="story-card">
+        <p class="story-kicker">Entrega</p>
+        <p>
+          Entregamos para qualquer lugar do estado
+          e para todo o Brasil.
+        </p>
+        <div class="delivery-route" aria-hidden="true">
+          <span class="route-pin route-origin"></span>
+          <span class="route-track">
+            <span class="route-truck">
+              <svg class="mini-icon" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M1.5 3h8.2v5.2h1.4l1.3-2h2.1v4h-.8a1.8 1.8 0 0 1-3.5 0H6.5a1.8 1.8 0 0 1-3.5 0h-.7V3zm10.5 2.2v2.2h1.2V6.2H12zM4.8 9.5a.9.9 0 1 0 0 1.8.9.9 0 0 0 0-1.8zm7.2 0a.9.9 0 1 0 0 1.8.9.9 0 0 0 0-1.8z"/>
+              </svg>
+            </span>
+          </span>
+          <span class="route-pin route-destination"></span>
+        </div>
+      </article>
+
+      <article class="story-card">
+        <p class="story-kicker">Personalize</p>
+        <ul class="story-list">
+          <li>
+            <svg class="mini-icon" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M8 1.3 9.8 5l4 .6-2.9 2.8.7 4-3.6-1.9-3.6 1.9.7-4L2.2 5.6l4-.6L8 1.3z"/>
+            </svg>
+            <span>Iniciais e nomes</span>
+          </li>
+          <li>
+            <svg class="mini-icon" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M8 1.5a6.5 6.5 0 1 0 0 13A6.5 6.5 0 0 0 8 1.5zm0 1.2a5.3 5.3 0 0 1 4.5 2.5H3.5A5.3 5.3 0 0 1 8 2.7zm0 10.6a5.3 5.3 0 0 1-4.6-2.7h9.2A5.3 5.3 0 0 1 8 13.3z"/>
+            </svg>
+            <span>Qualquer cor</span>
+          </li>
+          <li>
+            <svg class="mini-icon" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M8 14s5-3.2 5-7.4A3 3 0 0 0 8 4.2 3 3 0 0 0 3 6.6C3 10.8 8 14 8 14z"/>
+            </svg>
+            <span>Preta e a mais vendida</span>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="studio reveal" aria-label="Personalizacao">
+      <article class="studio-card studio-main">
+        <p class="studio-kicker">Personalizacao</p>
+        <h2>Do seu jeito</h2>
+        <div class="studio-chips">
+          <span>Iniciais</span>
+          <span>Qualquer cor</span>
+          <span>Preto #1</span>
+          <span>Entrega em todo lugar</span>
+        </div>
+      </article>
+
+      <article class="studio-card studio-prices">
+        <p class="studio-kicker">Valores</p>
+        <ul>
+          <li><span>Pulseira</span><strong>R$ 4,99</strong></li>
+          <li><span>Anel</span><strong>R$ 4,99</strong></li>
+          <li><span>Colar</span><strong>R$ 9,99</strong></li>
+          <li><span>Tornozeleira</span><strong>R$ 4,99</strong></li>
+        </ul>
+      </article>
+
+      <article class="studio-card studio-cta">
+        <p class="studio-kicker">Pedido rapido</p>
+        <p class="studio-delivery">Encomende de qualquer lugar. A gente entrega para voce.</p>
+        <div class="delivery-badges">
+          <span>
+            <svg class="mini-icon" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M8 1.2a4.7 4.7 0 0 0-4.7 4.7c0 3.3 4.2 8.5 4.4 8.7a.4.4 0 0 0 .6 0c.2-.2 4.4-5.4 4.4-8.7A4.7 4.7 0 0 0 8 1.2zm0 6.5a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6z"/>
+            </svg>
+            <span>Estado</span>
+          </span>
+          <span>
+            <svg class="mini-icon" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M1.5 3h8.2v5.2h1.4l1.3-2h2.1v4h-.8a1.8 1.8 0 0 1-3.5 0H6.5a1.8 1.8 0 0 1-3.5 0h-.7V3zm10.5 2.2v2.2h1.2V6.2H12zM4.8 9.5a.9.9 0 1 0 0 1.8.9.9 0 0 0 0-1.8zm7.2 0a.9.9 0 1 0 0 1.8.9.9 0 0 0 0-1.8z"/>
+            </svg>
+            <span>Brasil</span>
+          </span>
+        </div>
+        <a class="btn btn-main btn-whatsapp" href="https://wa.me/5535988034753?text=Oi%20Lili!%20Quero%20fazer%20um%20pedido.">
+          <svg class="icon icon-wa" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 8.008 0C3.58 0 0 3.58 0 8.008c0 1.41.37 2.787 1.07 4.011L0 16l4.103-1.06a7.94 7.94 0 0 0 3.903 1.005h.003c4.428 0 8.008-3.58 8.008-8.008a7.94 7.94 0 0 0-2.416-5.611zM8.008 14.637a6.57 6.57 0 0 1-3.35-.92l-.24-.144-2.434.63.649-2.372-.157-.243a6.54 6.54 0 0 1-1.003-3.48c0-3.625 2.95-6.575 6.575-6.575a6.53 6.53 0 0 1 4.648 1.934 6.53 6.53 0 0 1 1.928 4.646c-.003 3.626-2.953 6.576-6.576 6.576zm3.61-4.87c-.197-.099-1.17-.578-1.352-.644-.182-.066-.315-.099-.448.1-.132.197-.513.644-.63.776-.116.132-.231.148-.428.05-.197-.1-.833-.307-1.586-.98-.586-.523-.98-1.17-1.096-1.367-.116-.197-.012-.304.087-.402.09-.09.197-.231.296-.347.099-.116.132-.198.198-.33.066-.132.033-.248-.017-.347-.05-.099-.448-1.08-.614-1.478-.162-.39-.327-.337-.448-.343-.116-.007-.248-.008-.38-.008a.73.73 0 0 0-.53.248c-.182.198-.694.677-.694 1.65 0 .973.71 1.914.809 2.047.099.132 1.393 2.128 3.374 2.982.472.204.84.326 1.126.417.473.15.904.129 1.245.078.38-.057 1.17-.479 1.336-.941.165-.462.165-.858.116-.94-.05-.083-.182-.132-.38-.231z" />
+          </svg>
+          <span>Chamar no WhatsApp</span>
+        </a>
+      </article>
+    </section>
+
+    <section class="collection reveal" id="colecao">
+      <div class="section-top">
+        <h2>Colecao</h2>
+        <div class="filters" role="tablist" aria-label="Filtro da colecao">
+          <button class="filter is-active" data-filter="all">Todas</button>
+          <button class="filter" data-filter="pulseira">Pulseira</button>
+          <button class="filter" data-filter="anel">Anel</button>
+          <button class="filter" data-filter="colar">Colar</button>
+          <button class="filter" data-filter="tornozeleira">Tornozeleira</button>
+        </div>
+      </div>
+
+      <div class="scroll-system" aria-live="polite">
+        <p>em foco</p>
+        <strong id="active-photo-name">Pulseira</strong>
+        <div class="scroll-track">
+          <span id="active-photo-bar"></span>
+        </div>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" data-category="pulseira">
+          <div
+            class="photo-slot"
+            data-photo-id="1"
+            data-images="images/pulseira-rosa.jpeg|images/pulseira-rosa-limao-rosa.jpeg|images/pulseira-rosa-limao-amarelo.jpeg|images/pulseira-preta-coracao-rosa.jpeg|images/pulseira-branca-limao-verde.jpeg|images/hero-mao-rosa.jpeg|images/lookbook-rosa-coracao.jpeg|images/pulseira-turquesa-trio.jpeg|images/pulseira-turquesa-miuda.jpeg|images/pulseira-rosa-turquesa.jpeg|images/pulseira-preta-dourada.jpeg"
+          >
+            <span>foto 01</span>
+          </div>
+          <h3>Pulseira</h3>
+          <p>R$ 4,99</p>
+        </article>
+
+        <article class="product-card" data-category="anel">
+          <div
+            class="photo-slot"
+            data-photo-id="2"
+            data-images="images/anel-preto-dourado.jpeg|images/anel-branco-azul.jpeg|images/pulseira-cristal-rosa.jpeg"
+          >
+            <span>foto 02</span>
+          </div>
+          <h3>Anel</h3>
+          <p>R$ 4,99</p>
+        </article>
+
+        <article class="product-card" data-category="colar">
+          <div
+            class="photo-slot"
+            data-photo-id="3"
+            data-images="images/colar-preto-coracao.jpeg|images/pulseira-perola-limao.jpeg|images/hero-kit-rosa.jpeg|images/colar-mianga-rosa-verde.jpeg"
+          >
+            <span>foto 03</span>
+          </div>
+          <h3>Colar</h3>
+          <p>R$ 9,99</p>
+        </article>
+
+        <article class="product-card" data-category="tornozeleira">
+          <div
+            class="photo-slot"
+            data-photo-id="4"
+            data-images="images/tornozeleira-preto-perola.jpeg|images/lookbook-a.jpeg|images/duo-preto-azul.jpeg"
+          >
+            <span>foto 04</span>
+          </div>
+          <h3>Tornozeleira</h3>
+          <p>R$ 4,99</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="lookbook reveal">
+      <div class="show-main" id="show-main">Pulseira</div>
+      <div class="lookbook-side" aria-hidden="true">
+        <div class="look-mini look-mini-a" data-images="images/lookbook-a.jpeg|images/hero-kit-rosa.jpeg|images/pulseira-rosa-limao-amarelo.jpeg|images/pulseira-branca-limao-verde.jpeg|images/pulseira-turquesa-miuda.jpeg|images/colar-mianga-rosa-verde.jpeg"></div>
+        <div class="look-mini look-mini-b" data-images="images/lookbook-rosa-coracao.jpeg|images/pulseira-cristal-rosa.jpeg|images/pulseira-rosa-limao-rosa.jpeg|images/pulseira-preta-coracao-rosa.jpeg|images/pulseira-turquesa-trio.jpeg|images/pulseira-rosa-turquesa.jpeg|images/pulseira-preta-dourada.jpeg"></div>
+      </div>
+    </section>
+
+    <section class="contact reveal" id="contato">
+      <p class="contact-mini">Pedidos para todo o estado e para todo o Brasil: (35) 98803-4753 | <span class="contact-handle">@_pulseiras_da_lili_</span></p>
+      <div class="contact-actions">
+        <a class="btn btn-main btn-whatsapp" href="https://wa.me/5535988034753?text=Oi%20Lili!%20Quero%20fazer%20um%20pedido.">
+          <svg class="icon icon-wa" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 8.008 0C3.58 0 0 3.58 0 8.008c0 1.41.37 2.787 1.07 4.011L0 16l4.103-1.06a7.94 7.94 0 0 0 3.903 1.005h.003c4.428 0 8.008-3.58 8.008-8.008a7.94 7.94 0 0 0-2.416-5.611zM8.008 14.637a6.57 6.57 0 0 1-3.35-.92l-.24-.144-2.434.63.649-2.372-.157-.243a6.54 6.54 0 0 1-1.003-3.48c0-3.625 2.95-6.575 6.575-6.575a6.53 6.53 0 0 1 4.648 1.934 6.53 6.53 0 0 1 1.928 4.646c-.003 3.626-2.953 6.576-6.576 6.576zm3.61-4.87c-.197-.099-1.17-.578-1.352-.644-.182-.066-.315-.099-.448.1-.132.197-.513.644-.63.776-.116.132-.231.148-.428.05-.197-.1-.833-.307-1.586-.98-.586-.523-.98-1.17-1.096-1.367-.116-.197-.012-.304.087-.402.09-.09.197-.231.296-.347.099-.116.132-.198.198-.33.066-.132.033-.248-.017-.347-.05-.099-.448-1.08-.614-1.478-.162-.39-.327-.337-.448-.343-.116-.007-.248-.008-.38-.008a.73.73 0 0 0-.53.248c-.182.198-.694.677-.694 1.65 0 .973.71 1.914.809 2.047.099.132 1.393 2.128 3.374 2.982.472.204.84.326 1.126.417.473.15.904.129 1.245.078.38-.057 1.17-.479 1.336-.941.165-.462.165-.858.116-.94-.05-.083-.182-.132-.38-.231z" />
+          </svg>
+          <span>Falar no WhatsApp</span>
+        </a>
+        <a class="btn btn-soft btn-instagram" href="https://instagram.com/_pulseiras_da_lili_" target="_blank" rel="noopener noreferrer">
+          <svg class="icon icon-ig" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a5.5 5.5 0 0 0-1.99 1.302A5.5 5.5 0 0 0 .42 3.71c-.2.509-.333 1.09-.372 1.943C.01 6.506 0 6.779 0 8.95s.01 2.444.048 3.297c.04.854.173 1.435.372 1.943.2.509.467.94.76 1.233.294.294.725.56 1.234.76.508.2 1.09.333 1.943.372C5.556 15.99 5.829 16 8 16s2.444-.01 3.297-.048c.854-.04 1.435-.173 1.943-.372a5.5 5.5 0 0 0 1.233-.76 5.5 5.5 0 0 0 .76-1.233c.2-.508.333-1.09.372-1.943.038-.853.048-1.126.048-3.297s-.01-2.444-.048-3.297c-.04-.854-.173-1.435-.372-1.943a5.5 5.5 0 0 0-.76-1.233A5.5 5.5 0 0 0 13.24.42c-.508-.2-1.09-.333-1.943-.372C10.444.01 10.171 0 8 0zm0 1.441c2.134 0 2.389.008 3.233.046.78.036 1.204.166 1.486.276.375.146.643.321.925.603.282.282.457.55.603.925.11.282.24.707.276 1.486.038.844.046 1.099.046 3.233s-.008 2.389-.046 3.233c-.036.78-.166 1.204-.276 1.486a4.1 4.1 0 0 1-.603.925 4.1 4.1 0 0 1-.925.603c-.282.11-.707.24-1.486.276-.844.038-1.099.046-3.233.046s-2.389-.008-3.233-.046c-.78-.036-1.204-.166-1.486-.276a4.1 4.1 0 0 1-.925-.603 4.1 4.1 0 0 1-.603-.925c-.11-.282-.24-.707-.276-1.486C1.45 10.39 1.44 10.134 1.44 8s.01-2.389.048-3.233c.036-.78.166-1.204.276-1.486.146-.375.321-.643.603-.925a4.1 4.1 0 0 1 .925-.603c.282-.11.707-.24 1.486-.276C5.611 1.45 5.866 1.44 8 1.44z"/>
+            <path d="M8 3.892A4.108 4.108 0 1 0 8 12.108 4.108 4.108 0 0 0 8 3.892zm0 6.773a2.665 2.665 0 1 1 0-5.33 2.665 2.665 0 0 1 0 5.33zm4.271-6.938a.96.96 0 1 1-1.92 0 .96.96 0 0 1 1.92 0z"/>
+          </svg>
+          <span>Instagram</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Pulseiras da Lili</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
